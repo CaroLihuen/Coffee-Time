@@ -183,5 +183,20 @@ const obj = [
         description: "Exquisitos budines de limón, limón y amapola, chocolate con dulce de leche, manzana con crumble, vainilla y maracuya, naranja, nuez y dulce de leche, chocolate y naranja, frutos del bosque.Mantener en lugar fresco ",
         image: "https://ayulem.com.ar/wp-content/uploads/2019/03/budines-ayulem-1-1024x683.jpg",
         score: 8
+    },
+    {
+        name: "Budín integral de ciruela y chocolate 390gr",
+        price: 800,
+        description: "La textura de los frutos secos contrasta con el tierno y amargo chocolate, entre estos sabores la ciruela agrega un nuevo gusto que crea un perfecto equilibrio resultando en un bocado crocante, de sabores marcados y armoniosos.",
+        image: "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/490/069/products/7312-02-10c3bd2937c994d93916281742406944-1024-1024.jpg",
+        score: 5,
+        },
+    {
+        name: "Docena de scons dulces y caseros",
+        price: "450" ,
+        description: "Su sabor suave y tierna masa los hacen la perfecta combinación para una bebida caliente como el té o café.",
+        image: "https://mozzariquesos.com.ar/wp-content/uploads/2020/05/scon_con_mascarpone_1_1.jpg",
+        score: 4,
     }
+        
 ]
