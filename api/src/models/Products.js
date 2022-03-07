@@ -1,18 +1,19 @@
-const { DataTypes } =require('sequelize');
+import { DataTypes } from 'sequelize';
 
-module.exports=(sequelize) => {
+export default(sequelize) => {
     sequelize.define('Products' ,{
         id: {
-            type: DataType.INTERGER,
+            type: DataTypes.INTEGER,
             allowNull: false,
             primaryKey: true,
+            autoIncrement: true
         },
         name: {
             type: DataTypes.STRING,
             allowNull: false
         },
         price : {
-            type: DataTypes.STRING,
+            type: DataTypes.INTEGER,
             allowNull: false
         },
         description : {
@@ -21,9 +22,12 @@ module.exports=(sequelize) => {
         },
         img : {
             type: DataTypes.STRING,
+            validate: {
+                isUrl:true
+            }
         },
         points: {
-            type: DataTypes.STRING,
+            type: DataTypes.INTEGER,
         },
     })
 };

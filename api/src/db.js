@@ -1,14 +1,14 @@
-const {Sequelize} =require('sequelize');
-const fs = require('fs');
-const path=require('path');
+import { Sequelize } from 'sequelize';
+import { readdirSync } from 'fs';
+import { join } from 'path';
 
 const modelDefiners =[];
 
 // Leemos todos los archivos de la carpeta Models, los requerimos y agregamos al arreglo modelDefiners
-fs.readdirSync(path.join(__dirname,'/models'))
+readdirSync(join(__dirname,'/models'))
  .filter((file) =>(file.indexOf('.') !== 0) && (file !== basename) && (file.slice(-3) === '.js'))
  .forEach((file) => {(
-     moderlDefiners.push(require(path.join(__dirname,'/models', file))))
+     moderlDefiners.push(require(join(__dirname,'/models', file))))
  });
 
  // Injectamos la conexion (sequelize) a todos los modelos
@@ -25,7 +25,7 @@ fs.readdirSync(path.join(__dirname,'/models'))
  Products.belongsToMany(Clients, {through: 'products_clients'})
  Clients.belongsToMany(Products, {through: 'products_clients'})
 
- module.exports={
+ export default{
      ...sequelize.models, // para poder importar los modelos así: const { Product, User } = require('./db.js');
      conn: sequelize,     // para importar la conexión { conn } = require('./db.js');
  }

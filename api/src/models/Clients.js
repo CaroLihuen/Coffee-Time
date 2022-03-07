@@ -1,11 +1,12 @@
-const {DataTypes} =require('sequelize');
+import { DataTypes } from 'sequelize';
 
-module.exports=(sequelize) =>{
+export default (sequelize) =>{
     sequelize.define('clients', {
         id: {
-            type: DataType.INTERGER,
+            type: DataTypes.INTEGER,
             allowNull: false,
             primaryKey: true,
+            autoIncrement:true
         },
         userName: {
             type: DataTypes.STRING,
@@ -13,7 +14,10 @@ module.exports=(sequelize) =>{
         },
         email: {
             type: DataTypes.STRING,
-            allowNull: false
+            allowNull: false,
+            validate:{
+                isEmail: true
+            }
         },
         password: {
             type: DataTypes.STRING,
