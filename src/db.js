@@ -18,4 +18,5 @@ fs.readdirSync(path.join(__dirname,'/models'))
 
  const {Products, Clients} = sequelize.models;
 
- Products.belongsToMany(Clients, {through: ''})
+ Products.belongsToMany(Clients, {through: 'products_clients'})
+ Clients.belongsToMany(Products, {through: 'products_clients'})
