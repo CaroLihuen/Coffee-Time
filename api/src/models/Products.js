@@ -22,7 +22,7 @@ module.exports=(sequelize) => {
         img : {
             type: DataTypes.STRING,
         },
-        points: {
+        score: {
             type: DataTypes.STRING,
         },
     })
