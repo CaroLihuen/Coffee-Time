@@ -4,14 +4,14 @@ const obj = [
         price: 600,
         description: "Un café con gratas notas aromáticas dulces, afrutadas, que recuerdan el caramelo y el suave chocolate oscuro; sobresale su delicada acidez frutal, su elegante cuerpo cremoso y su armonioso balance. 100% cultivado en la hacienda san Alberto y procesado bajo el proceso insignia de la Quíntuple Selección",
         image: "https://www.cafesanalberto.com/wp/wp-content/uploads/2020/08/SanAlberto_cafe_classic-600x750.jpg",
-        score: 8
+        score: 5
     },
     {
         name: "Orange Earl Grey en Hebras Tehani Lata 50 g",
         price: 800,
         description: "Te negro en hebras,cascaras de naranjas, bergamota, clavo de olor, con esencia de naranja y peras.",
         image: "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/863/358/products/whatsapp-image-2021-11-08-at-10-13-22-pm-31-39091311c2efeaca7216364342819044-640-0.jpeg",
-        score: 8
+        score: 3
     },
 
     {
@@ -19,7 +19,7 @@ const obj = [
         price: 2000,
         description: "Está elaborado con granos de café 100 % arábico SANTOS BOURBON, los más selectos de Brasil.tiene características suaves, pero de sabor exquisito, fina calidad y aspecto cremoso, para ser disfrutado en todo momento. ",
         image: "https://http2.mlstatic.com/D_NQ_NP_603636-MLA49292060540_032022-O.webp",
-        score: 8
+        score: 3
     },
     {
         name: "Croissants 12 u",
