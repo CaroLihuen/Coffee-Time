@@ -2,6 +2,11 @@ const {DataTypes} =require('sequelize');
 
 module.exports=(sequelize) =>{
     sequelize.define('clients', {
+        id: {
+            type: DataType.INTERGER,
+            allowNull: false,
+            primaryKey: true,
+        },
         userName: {
             type: DataTypes.STRING,
             allowNull: false
