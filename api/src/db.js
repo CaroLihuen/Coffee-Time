@@ -1,11 +1,22 @@
 import { Sequelize } from 'sequelize';
-import { readdirSync } from 'fs';
+require('dotenv').config();
+import fs from 'fs'
 import { join } from 'path';
+const {
+    DB_USER, DB_PASSWORD, DB_HOST,
+  } = process.env;
+
+
+const sequelize = new Sequelize(`postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/coffee_time`, {
+  logging: false, // set to console.log to see the raw SQL queries
+  native: false, // lets Sequelize know we can use pg-native for ~30% more speed
+});
+const basename = path.basename(__filename);
 
 const modelDefiners =[];
 
 // Leemos todos los archivos de la carpeta Models, los requerimos y agregamos al arreglo modelDefiners
-readdirSync(join(__dirname,'/models'))
+fs.readdirSync(join(__dirname,'/models'))
  .filter((file) =>(file.indexOf('.') !== 0) && (file !== basename) && (file.slice(-3) === '.js'))
  .forEach((file) => {(
      moderlDefiners.push(require(join(__dirname,'/models', file))))
