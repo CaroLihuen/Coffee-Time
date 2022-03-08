@@ -1,12 +1,12 @@
-import { Router } from 'express';
-import util from '../util/utils.js'
+const { Router } = require( 'express')
+const util = require( '../util/utils.js')
 
 const router = Router();
 
 router.get('/', (req, res) => {
 
-    res.send({util})
-    // res.send({ms: 'Holaaaaa'})
+    // res.send({util})
+    res.send({ms: 'Holaaaaa'})
 
 });
 
@@ -24,4 +24,4 @@ router.get('/home', (req, res) => {
     
 // });
 
-export default router;
+module.exports = {router};

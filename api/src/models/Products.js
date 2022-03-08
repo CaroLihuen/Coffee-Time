@@ -1,10 +1,9 @@
-import { DataTypes } from 'sequelize';
+const { DataTypes }= require ('sequelize');
 
-export default(sequelize) => {
-    sequelize.define('Products' ,{
+module.exports = (sequelize) => {
+    sequelize.define('products' ,{
         id: {
             type: DataTypes.INTEGER,
-            allowNull: false,
             primaryKey: true,
             autoIncrement: true
         },
@@ -20,13 +19,13 @@ export default(sequelize) => {
             type: DataTypes.STRING,
             allowNull: false
         },
-        img : {
+        image : {
             type: DataTypes.STRING,
             validate: {
                 isUrl:true
             }
         },
-        points: {
+        score: {
             type: DataTypes.INTEGER,
         },
     })

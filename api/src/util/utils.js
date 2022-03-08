@@ -1,4 +1,4 @@
-export default [
+module.exports = [
         {
             name: "San Alberto Coffee 340 gr",
             price: 600,
