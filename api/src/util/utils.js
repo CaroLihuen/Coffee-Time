@@ -1,4 +1,4 @@
-export const obj = [
+export default [
     {
         name: "San Alberto Coffee 340 gr",
         price: 600,
