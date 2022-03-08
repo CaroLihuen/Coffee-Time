@@ -1,4 +1,4 @@
-export const obj = [
+const obj = [
     {
         name: "San Alberto Coffee 340 gr",
         price: 600,
@@ -200,3 +200,5 @@ export const obj = [
         },
         
 ]
+
+module.exports = obj

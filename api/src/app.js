@@ -1,10 +1,10 @@
-import express from 'express';
-import cookieParser from 'cookie-parser';
-import bodyParser from 'body-parser';
-import morgan from 'morgan';
-import routes from './routes/index.js';
-import './db.js'
-import {obj} from './utils/utils'
+const express = require('express');
+const cookieParser = require('cookie-parser');
+const bodyParser = require('body-parser');
+const morgan = require('morgan');
+const routes = require('./routes/index.js');
+require('./db.js') 
+const obj=require('utils/utils');
 
 const server= express();
 server.name= obj

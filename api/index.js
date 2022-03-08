@@ -1,5 +1,5 @@
-import server from './app';
-import {conn} from './db';
+const server = require('./src/app.js');
+const { conn } = require('./src/db.js');
 
 conn.sync({ force: true }).then(() => {
     server.listen(3001, () => {
