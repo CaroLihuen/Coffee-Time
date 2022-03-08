@@ -1,17 +1,17 @@
-const obj = [
+export const obj = [
     {
         name: "San Alberto Coffee 340 gr",
         price: 600,
         description: "Un café con gratas notas aromáticas dulces, afrutadas, que recuerdan el caramelo y el suave chocolate oscuro; sobresale su delicada acidez frutal, su elegante cuerpo cremoso y su armonioso balance. 100% cultivado en la hacienda san Alberto y procesado bajo el proceso insignia de la Quíntuple Selección",
         image: "https://www.cafesanalberto.com/wp/wp-content/uploads/2020/08/SanAlberto_cafe_classic-600x750.jpg",
-        score: 8
+        score: 5
     },
     {
         name: "Orange Earl Grey en Hebras Tehani Lata 50 g",
         price: 800,
         description: "Te negro en hebras,cascaras de naranjas, bergamota, clavo de olor, con esencia de naranja y peras.",
         image: "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/863/358/products/whatsapp-image-2021-11-08-at-10-13-22-pm-31-39091311c2efeaca7216364342819044-640-0.jpeg",
-        score: 8
+        score: 3
     },
 
     {
@@ -19,7 +19,7 @@ const obj = [
         price: 2000,
         description: "Está elaborado con granos de café 100 % arábico SANTOS BOURBON, los más selectos de Brasil.tiene características suaves, pero de sabor exquisito, fina calidad y aspecto cremoso, para ser disfrutado en todo momento. ",
         image: "https://http2.mlstatic.com/D_NQ_NP_603636-MLA49292060540_032022-O.webp",
-        score: 8
+        score: 3
     },
     {
         name: "Croissants 12 u",
@@ -183,5 +183,20 @@ const obj = [
         description: "Exquisitos budines de limón, limón y amapola, chocolate con dulce de leche, manzana con crumble, vainilla y maracuya, naranja, nuez y dulce de leche, chocolate y naranja, frutos del bosque.Mantener en lugar fresco ",
         image: "https://ayulem.com.ar/wp-content/uploads/2019/03/budines-ayulem-1-1024x683.jpg",
         score: 8
-    }
+    },
+    {
+        name: "Budín integral de ciruela y chocolate 390gr",
+        price: 800,
+        description: "La textura de los frutos secos contrasta con el tierno y amargo chocolate, entre estos sabores la ciruela agrega un nuevo gusto que crea un perfecto equilibrio resultando en un bocado crocante, de sabores marcados y armoniosos.",
+        image: "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/490/069/products/7312-02-10c3bd2937c994d93916281742406944-1024-1024.jpg",
+        score: 5,
+        },
+        {
+        name: "Docena de scons dulces y caseros",
+        price: 450 ,
+        description: "Su sabor suave y tierna masa los hacen la perfecta combinación para una bebida caliente como el té o café.",
+        image: "https://mozzariquesos.com.ar/wp-content/uploads/2020/05/scon_con_mascarpone_1_1.jpg",
+        score: 4,
+        },
+        
 ]
