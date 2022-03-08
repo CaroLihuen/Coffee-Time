@@ -1,22 +1,27 @@
-const {Router} = require('express')
+import { Router } from 'express';
+import util from '../util/utils.js'
 
 const router = Router();
 
-router.get('path', (req, res) => {
-    
+router.get('/', (req, res) => {
+
+    res.send({util})
+    // res.send({ms: 'Holaaaaa'})
+
 });
 
 
-router.post('path', (req, res) => {
+router.get('/home', (req, res) => {
+    res.send({ms: 'Holaaaaa en homeee'})
     
 });
 
-router.put('path', (req, res) => {
+// router.put('path', (req, res) => {
     
-});
+// });
 
-router.delete('path', (req, res) => {
+// router.delete('path', (req, res) => {
     
-});
+// });
 
-module.exports = router;
+export default router;

@@ -1,4 +1,13 @@
 import { Sequelize } from 'sequelize';
+<<<<<<< HEAD
+import { readdirSync } from 'fs';
+import { basename as _basename, join } from 'path';
+
+const {DB_USER, DB_PASSWORD, DB_HOST} = process.env
+const sequelize = new Sequelize(`postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/coffee`)
+
+const basename = _basename(__filename);
+=======
 require('dotenv').config();
 import fs from 'fs'
 import { join } from 'path';
@@ -12,6 +21,7 @@ const sequelize = new Sequelize(`postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}
   native: false, // lets Sequelize know we can use pg-native for ~30% more speed
 });
 const basename = path.basename(__filename);
+>>>>>>> 69a1e65deab5bb1ae241cc56d03bd7cd0e316200
 
 const modelDefiners =[];
 
@@ -19,7 +29,7 @@ const modelDefiners =[];
 fs.readdirSync(join(__dirname,'/models'))
  .filter((file) =>(file.indexOf('.') !== 0) && (file !== basename) && (file.slice(-3) === '.js'))
  .forEach((file) => {(
-     moderlDefiners.push(require(join(__dirname,'/models', file))))
+     modelDefiners.push(require(join(__dirname,'/models', file))))
  });
 
  // Injectamos la conexion (sequelize) a todos los modelos
