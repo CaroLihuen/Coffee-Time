@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 export default [
-=======
-const obj = [
->>>>>>> 69a1e65deab5bb1ae241cc56d03bd7cd0e316200
     {
         name: "San Alberto Coffee 340 gr",
         price: 600,
@@ -204,5 +200,3 @@ const obj = [
         },
         
 ]
-
-module.exports = obj
