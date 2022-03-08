@@ -1,9 +1,9 @@
-const {DataTypes} =require('sequelize');
+import  { DataTypes } from 'sequelize';
 
-module.exports=(sequelize) =>{
+export default (sequelize) => {
     sequelize.define('clients', {
         id: {
-            type: DataType.INTERGER,
+            type: DataTypes.INTEGER,
             allowNull: false,
             primaryKey: true,
         },

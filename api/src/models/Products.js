@@ -1,7 +1,7 @@
 const { DataTypes } =require('sequelize');
 
 module.exports=(sequelize) => {
-    sequelize.define('Products' ,{
+    sequelize.define('products' ,{
         id: {
             type: DataType.INTERGER,
             allowNull: false,
