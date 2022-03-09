@@ -8,11 +8,9 @@ const {
   } = process.env;
 
 
-const sequelize = new Sequelize(`postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/coffee_time`, {
-  logging: false, // set to console.log to see the raw SQL queries
-  native: false, // lets Sequelize know we can use pg-native for ~30% more speed
-});
-const basename = path.basename(__filename);
+const sequelize = new Sequelize(`postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/coffee`)
+
+const basename = _basename(__filename);
 
 const modelDefiners =[];
 
@@ -20,7 +18,7 @@ const modelDefiners =[];
 fs.readdirSync(join(__dirname,'/models'))
  .filter((file) =>(file.indexOf('.') !== 0) && (file !== basename) && (file.slice(-3) === '.js'))
  .forEach((file) => {(
-     moderlDefiners.push(require(join(__dirname,'/models', file))))
+     modelDefiners.push(require(join(__dirname,'/models', file))))
  });
 
  // Injectamos la conexion (sequelize) a todos los modelos

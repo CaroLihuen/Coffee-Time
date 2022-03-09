@@ -1,4 +1,4 @@
-const obj = [
+export default [
     {
         
         id:1,
@@ -229,5 +229,3 @@ const obj = [
         },
         
 ]
-
-module.exports = obj
