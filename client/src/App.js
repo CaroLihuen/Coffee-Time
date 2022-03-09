@@ -2,15 +2,22 @@ import './App.css';
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Home from './Components/Home'
-//Es localholst:3000/home
+import Navbar from './Components/Navbar';
+import Login from './Components/Login';
+import User from './Components/User';
+//Es localholst:3000/home =>Home
+//localholst:3000/user => crear usuario
+//localholst:3000/login => usuario
+
 function App() {
   return (
     <div className="App">
-     <Routes>
+     <Navbar/>
+      <Routes>
        <Route path="/home" element={<Home/>} /> 
-       {/**<Route path="/" element={<></>} />
-       <Route path="/" element={<></>} /> */}
-     </Routes>
+       <Route path="/login" element={<Login/>} />
+       <Route path="/user" element={<User/>}/> 
+      </Routes>
     </div>
   );
 }
