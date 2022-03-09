@@ -26,7 +26,7 @@ export default(sequelize) => {
                 isUrl:true
             }
         },
-        points: {
+        score: {
             type: DataTypes.INTEGER,
         },
     })

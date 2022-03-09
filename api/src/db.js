@@ -1,5 +1,6 @@
 import { Sequelize } from 'sequelize';
-require('dotenv').config();
+import dotenv from 'dotenv'
+dotenv.config({ silent: true }); //buscar silent property
 import fs from 'fs'
 import { join } from 'path';
 const {
